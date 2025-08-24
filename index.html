@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5: Enhancing Content</title>
+    <meta name="description" content="Demonstrating lists, tables, media embedding, and accessible forms using advanced HTML5 features.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5: Enhancing Content</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Lists Section -->
+        <section id="lists" aria-labelledby="lists-heading">
+            <h2 id="lists-heading">Organizing Content with Lists</h2>
+            <h3>Ordered List: Steps to Submit an Assignment</h3>
+            <ol>
+                <li>Read the instructions carefully.</li>
+                <li>Complete your work.</li>
+                <li>Review for errors.</li>
+                <li>Submit via the repo generated for you.</li>
+            </ol>
+            <h3>Unordered List: Required Materials</h3>
+            <ul>
+                <li>Laptop or PC</li>
+                <li>Internet connection</li>
+                <li>Text editor</li>
+            </ul>
+            <h3>Description List: Key Terms</h3>
+            <dl>
+                <dt>HTML5</dt>
+                <dd>The latest version of the HTML standard.</dd>
+                <dt>Accessibility</dt>
+                <dd>Designing content usable by everyone, including people with disabilities.</dd>
+            </dl>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables" aria-labelledby="tables-heading">
+            <h2 id="tables-heading">Organizing Data with Tables</h2>
+            <table>
+                <caption>Course Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Topic</th>
+                        <th>Assignment Due</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Introduction to HTML5</td>
+                        <td>Friday</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Advanced HTML5</td>
+                        <td>Friday</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>CSS Basics</td>
+                        <td>Friday</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" aria-labelledby="media-heading">
+            <h2 id="media-heading">Embedding Media Content</h2>
+            <figure>
+                <img src="https://picsum.photos/200/300" alt="Sample placeholder image" width="300" height="150">
+                <figcaption>Random images from picsum.photos</figcaption>
+            </figure>
+            <figure>
+                <audio controls>
+                    <source src="placeholder.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Listen to our introduction audio.</figcaption>
+            </figure>
+            <figure>
+                <video width="320" height="180" controls alt="">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Big Buck Bunny is a cartoon about a gentle giant rabbit who is bullied by three rodents and decides to get comical revenge. The film is licensed under Creative Commons Attribution.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Contact Form</h2>
+            <form autocomplete="on">
+                <fieldset>
+                    <legend>Send Us a Message</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50" aria-required="true" pattern="[A-Za-z\s]+" aria-required="true" autocomplete="name" placeholder="Your full name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" placeholder="you@example.com">
+
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Select a topic</option>
+                        <option value="html5">HTML5</option>
+                        <option value="accessibility">Accessibility</option>
+                        <option value="media">Media</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required maxlength="500" placeholder="Type your message here""></textarea>
+
+                    <label for="subscribe">
+                        <input type="checkbox" name="subscribe" value="yes">
+                        Subscribe to newsletter
+                    </label>
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Assignment. All rights reserved.</p>
+    </footer>
+</body>
+</html>
